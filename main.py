@@ -110,7 +110,7 @@ text8 = url_pattern.finditer(url)
 for i in text8:
     print(i.group())
 #########################
-name_pattern=re.compile(r'((Mr|mr|Shr|shr|Dr|dr|prof|Prof)\.\s?([A-Za-z.]+\s?[A-Za-z]+))')
+name_pattern=re.compile(r'((Mr|mr|Shr|shr|Dr|dr|prof|Prof)|(^[A-Z]+)\.?\s?([A-Za-z.]+(^[A-Z]+)?\s?[A-Za-z]+))')
 
 text9 = name_pattern.finditer(names)
 
